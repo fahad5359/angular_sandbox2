@@ -1,1 +1,44 @@
 <p>play-two works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-7">
+      <div class="text-center" *ngFor="let PlayTwoMdl of plyToMdl">
+
+        <h1 class='stle ll'>@{{PlayTwoMdl.usernem}}</h1>
+        <h4 class="stle ll">{{PlayTwoMdl.comment}}</h4>
+      </div>
+    </div>
+    <div class="text-right align-items-end">
+      <h1>
+        Picture Her
+      </h1>
+    </div>
+  </div>
+  <hr>
+  <div class="container col-lg-5" *ngFor="let SpicialDealsModel of arrayFor_Deals">
+    <div class="img-responsive"><img src="{{SpicialDealsModel.img}}"  style="max-height: 50px;"></div>
+    <ul class="col-6 col-sm-3">
+      <li class="text-left">Sale on {{SpicialDealsModel.dealName}}</li>
+      <li class="text-left">{{SpicialDealsModel.dealPrice}}</li>
+      <li class="text-left">{{SpicialDealsModel.Avalible_In_CurrentCuntry}}</li>
+    </ul>
+  </div>
+<!--  <div class="container col-lg-5">-->
+<!--    <div class="img-responsive"><a>imge</a></div>-->
+<!--    <ul class="col-6 col-sm-3">-->
+<!--      <li class="text-left">Deal Name</li>-->
+<!--      <li class="text-left">dealPrice</li>-->
+<!--      <li class="text-left">Avalible_In_CurrentCuntry</li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--  <div class="container col-lg-5">-->
+<!--    <div class="img-responsive"><a>imge</a></div>-->
+<!--    <ul class="col-6 col-sm-3">-->
+<!--      <li class="text-left">Deal Name</li>-->
+<!--      <li class="text-left">dealPrice</li>-->
+<!--      <li class="text-left">Avalible_In_CurrentCuntry</li>-->
+<!--    </ul>-->
+<!--  </div>-->
+</div>
+
+
